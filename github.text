@@ -6,3 +6,29 @@ git branch -M main
 git remote add origin git@github.com:mursalin2001/react-jobs.git
 git push -u origin main
 git@github.com:mursalin2001/react-jobs.git
+
+
+
+// STEP 1
+create repo from github
+// Step 2 
+git init
+//STEP 3 
+git remote add origin git@github.com:mursalin2001/react-jobs.git
+
+// STEP 4
+ git status 
+
+
+ // STEP 5
+ git add .
+
+ // STEP 6
+ git status 
+
+ // STEP 7
+ git commit -m "first commit"
+
+ // STEP 8
+
+ git push -u origin master 
