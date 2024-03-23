@@ -32,3 +32,12 @@ git remote add origin git@github.com:mursalin2001/react-jobs.git
  // STEP 8
 
  git push -u origin master 
+
+
+
+ // update an existing part 
+
+ S-1 : git init 
+ S-2 : git add .
+ S-3 : git commit -m "Third commit"
+ S-4 : git push -u origin master 
