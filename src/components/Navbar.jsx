@@ -23,11 +23,6 @@ const Navbar = () => {
 
             <hr />
 
-            <div className='flex justify-center items-center flex-col mt-20'>
-                <h1 className='text-5xl font-mono text-white mt-10 '>Become a React Dev </h1>
-                <h1 className='text-white mb-20 pt-6'>Find the React jobs that fits your skills and needs</h1>
-            </div>
-
         </div>
     )
 }
