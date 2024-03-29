@@ -1,28 +1,23 @@
-import {RouterProvider, Route, createBrowserRouter, createRoutesFromElements, createRoute} from 'react-router-dom'
+import {RouterProvider, Route, createBrowserRouter, createRoutesFromElements} from 'react-router-dom'
 import React from 'react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Card from './components/Card'
-import JobListing from './JobListing'
-import ViewAllJobs from './components/ViewAllJobs'
+import HomePage from './pages/HomePage'
+import MainLayout from './layouts/MainLayout'
+import JobsPages from './pages/JobsPages'
 // import TestingHooks from './components/TestingHooks'
 
 const router = createBrowserRouter(
-  createRoutesFromElements(<Route index element={<h1>My App</h1>}/>)
+  createRoutesFromElements(
+    <Route path='/' element={<MainLayout />}>
+     <Route index element={<HomePage />}/>
+     <Route  path='/jobs' element={<JobsPages />}/>
+
+
+    </Route>
+
+  )
 )
 const App = () => {
-  return (
-    <>
-    <Navbar/>
-    <Hero title = "Become a React Dev " subTitle="Find the React jobs that fits your skills and needs"/>
-    <Card/>
-    <JobListing/>
-    <ViewAllJobs />
-    {/* <TestingHooks/> */}
-    <div>App</div>
-
-    </>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App

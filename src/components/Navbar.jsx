@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom'
 import React from 'react'
-import logo from "../assets/images/react.jpg"
 import logo2 from "../assets/react.svg"
 
 const Navbar = () => {
@@ -14,9 +14,9 @@ const Navbar = () => {
 
                 <div className='flex'>
                     <ul className='flex flex-row'>
-                        <li className='my-9 m-2' > <a href="#" className='text-white  p-4 hover:bg-slate-700 rounded-lg'> Home</a></li>
-                        <li className='my-9 m-2'> <a href="#" className='text-white  p-4 hover:bg-slate-700 rounded-lg'>Jobs</a> </li>
-                        <li className='my-9 m-2' > <a href="#" className='text-white  p-4 hover:bg-slate-700 rounded-lg'>Add jobs</a> </li>
+                        <li className='my-9 m-2' > <Link to="/" className='text-white  p-4 hover:bg-slate-700 rounded-lg'> Home</Link></li>
+                        <li className='my-9 m-2'> <Link to="/jobs" className='text-white  p-4 hover:bg-slate-700 rounded-lg'>Jobs</Link> </li>
+                        <li className='my-9 m-2' > <Link to="/addjobs" className='text-white  p-4 hover:bg-slate-700 rounded-lg'>Add jobs</Link> </li>
                     </ul>
                 </div>
             </div>
